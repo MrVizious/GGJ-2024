@@ -6,10 +6,21 @@ using Audio;
 using ExtensionMethods;
 using Sirenix.OdinInspector;
 
+[RequireComponent(typeof(ShowManager))]
 public class SoundManager : MonoBehaviour
 {
-    public UnityEvent<AudioClip> onSoundPlay = new UnityEvent<AudioClip>();
     private HashSet<AudioClip> playingSounds = new HashSet<AudioClip>();
+
+    private ShowManager _showManager;
+    private ShowManager showManager
+    {
+        get
+        {
+            if (_showManager == null) _showManager = GetComponent<ShowManager>();
+            return _showManager;
+        }
+    }
+
     [Button]
     public void PlaySound(AudioClip audioClip)
     {

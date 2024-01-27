@@ -5,7 +5,9 @@ using Sirenix.OdinInspector;
 
 public class ShowManager : MonoBehaviour
 {
+    public bool SHOWPLAYING = false;
     public float rating = 100f;
+    public float penaltyPerSecondCamera = 5f, penaltyPerSecondSound = 10f, rewardPerSecondCamera = 1f, rewardPerSecondSound = 2f;
 
     public Screen mainScreen;
 
@@ -29,6 +31,14 @@ public class ShowManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (!SHOWPLAYING) return;
+
+
+    }
+
+
     private void UpdateCurrentRenderTexture()
     {
         if (mainScreen == null)
@@ -45,6 +55,7 @@ public class ShowManager : MonoBehaviour
         {
             Debug.LogError("The sound was already added to accepted sounds. Please, check this", this);
         }
+        Debug.Log("Added accepted sound: " + newAudioClip);
     }
     public void AddRequiredSound(AudioClip newAudioClip)
     {
@@ -71,7 +82,4 @@ public class ShowManager : MonoBehaviour
             Debug.LogError("The sound wasn't in accepted sounds before being deleted. Please, check this", this);
         }
     }
-
-
-
 }
