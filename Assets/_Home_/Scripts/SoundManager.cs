@@ -9,7 +9,9 @@ using Sirenix.OdinInspector;
 [RequireComponent(typeof(ShowManager))]
 public class SoundManager : MonoBehaviour
 {
-    private HashSet<AudioClip> playingSounds = new HashSet<AudioClip>();
+    public HashSet<AudioClip> playingSounds = new HashSet<AudioClip>();
+    public AudioClip beepClip;
+    private AudioSourceExtended beepSource;
 
     private ShowManager _showManager;
     private ShowManager showManager
@@ -32,6 +34,19 @@ public class SoundManager : MonoBehaviour
         playingSounds.Add(audioClip);
         AudioSourceExtended source = AudioManager.Instance.PlaySound(audioClip);
         source.onRelease += () => OnSoundStop(audioClip);
+    }
+
+    public void BeginBeep()
+    {
+        beepSource = AudioManager.Instance.PlaySound(beepClip);
+        beepSource.audioSource.loop = true;
+        playingSounds.Add(beepClip);
+    }
+
+    public void StopBeep()
+    {
+        beepSource.Stop();
+        playingSounds.Remove(beepClip);
     }
 
     private void OnSoundStop(AudioClip audioClip)

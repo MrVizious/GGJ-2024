@@ -2,13 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
+using System.Linq;
 
+[RequireComponent(typeof(SoundManager))]
 public class ShowManager : MonoBehaviour
 {
     public bool SHOWPLAYING = false;
-    public float rating = 100f;
-    public float penaltyPerSecondCamera = 5f, penaltyPerSecondSound = 10f, rewardPerSecondCamera = 1f, rewardPerSecondSound = 2f;
 
+    [SerializeField]
+    [Range(0f, 100f)]
+    private float _rating = 100f;
+    public float rating
+    {
+        get => _rating;
+        set
+        {
+            value = Mathf.Clamp(value, 0f, 100f);
+            _rating = value;
+        }
+    }
+    [Header("Penalties and rewards")]
+    public float rewardPerSecondCamera = 1f;
+    public float penaltyPerSecondCamera = 5f;
+    public float rewardPerSecondSound = 2f;
+    public float penaltyPerSecondSound = 10f;
+
+    [Header("References")]
     public Screen mainScreen;
 
     public HashSet<AudioClip> acceptedSounds = new HashSet<AudioClip>();
@@ -31,13 +50,57 @@ public class ShowManager : MonoBehaviour
         }
     }
 
+    private SoundManager _soundManager;
+    private SoundManager soundManager
+    {
+        get
+        {
+            if (_soundManager == null) _soundManager = GetComponent<SoundManager>();
+            return _soundManager;
+        }
+    }
+
+
+    // TODO: Activate SHOWPLAYING with a button or something
+    private void Start()
+    {
+        SHOWPLAYING = true;
+    }
     private void Update()
     {
         if (!SHOWPLAYING) return;
 
+        CalculateSoundsScore();
+
+        CalculateCameraScore();
 
     }
 
+    private void CalculateSoundsScore()
+    {
+        foreach (AudioClip audioClip in soundManager.playingSounds)
+        {
+            if (requiredSounds.Contains(audioClip)) rating += rewardPerSecondSound * Time.deltaTime;
+            else if (!acceptedSounds.Contains(audioClip)) rating -= penaltyPerSecondSound * Time.deltaTime;
+        }
+
+        foreach (AudioClip audioClip in requiredSounds)
+        {
+            if (!soundManager.playingSounds.Contains(audioClip)) rating -= penaltyPerSecondSound * Time.deltaTime;
+        }
+    }
+
+    private void CalculateCameraScore()
+    {
+        if (acceptedRenderTextures.Contains(mainScreen.currentRenderTexture))
+        {
+            rating += rewardPerSecondCamera * Time.deltaTime;
+        }
+        else
+        {
+            rating -= penaltyPerSecondCamera * Time.deltaTime;
+        }
+    }
 
     private void UpdateCurrentRenderTexture()
     {
@@ -51,6 +114,10 @@ public class ShowManager : MonoBehaviour
 
     public void AddAcceptedSound(AudioClip newAudioClip)
     {
+        if (requiredSounds.Contains(newAudioClip))
+        {
+            Debug.LogError("Sound is already in required sounds");
+        }
         if (!acceptedSounds.Add(newAudioClip))
         {
             Debug.LogError("The sound was already added to accepted sounds. Please, check this", this);
