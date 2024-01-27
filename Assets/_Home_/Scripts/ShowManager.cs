@@ -72,6 +72,8 @@ public class ShowManager : MonoBehaviour
 
         CalculateSoundsScore();
 
+        CalculateCameraScore();
+
     }
 
     private void CalculateSoundsScore()
@@ -85,6 +87,18 @@ public class ShowManager : MonoBehaviour
         foreach (AudioClip audioClip in requiredSounds)
         {
             if (!soundManager.playingSounds.Contains(audioClip)) rating -= penaltyPerSecondSound * Time.deltaTime;
+        }
+    }
+
+    private void CalculateCameraScore()
+    {
+        if (acceptedRenderTextures.Contains(mainScreen.currentRenderTexture))
+        {
+            rating += rewardPerSecondCamera * Time.deltaTime;
+        }
+        else
+        {
+            rating -= penaltyPerSecondCamera * Time.deltaTime;
         }
     }
 
