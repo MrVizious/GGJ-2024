@@ -20,6 +20,7 @@ MonoBehaviour:
     height: 775.4286
   m_ShowMode: 4
   m_Title: Scene
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 1
-  controlID: 170
+  controlID: 70
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -278,7 +279,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 171
+  controlID: 164
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -600,9 +601,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 4066ffff
-      m_LastClickedID: -39360
-      m_ExpandedIDs: 129bffffdedfffff16fbffff
+      m_SelectedIDs: 54f8ffff
+      m_LastClickedID: -1964
+      m_ExpandedIDs: 08dbffffe0e4ffff72f2ffff84f3ffff5af7ffff54f8ffffb2f8ffff14fbffff6a620000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -664,7 +665,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: -162.85718, y: -26}
+      snapOffset: {x: -171, y: -26}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
       id: Tool Settings
@@ -1086,9 +1087,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.3009603, y: 0.3861766, z: 3.4285927}
+    m_Target: {x: 638.4199, y: 517.7314, z: -6.4435034}
     speed: 2
-    m_Value: {x: -0.3009603, y: 0.3861766, z: 3.4285927}
+    m_Value: {x: 638.4199, y: 517.7314, z: -6.4435034}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1138,9 +1139,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.13241099, y: -0.047179762, z: 0.0063097486, w: -0.9900514}
   m_Size:
-    m_Target: 3.124422
+    m_Target: 697.3824
     speed: 2
-    m_Value: 3.271646
+    m_Value: 697.3824
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1257,7 +1258,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/_Home_/Art
+    - Assets/_Home_/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1265,16 +1266,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/_Home_/Art
+  - Assets/_Home_/Scenes
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\Projects\GGJ2024
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7e620000
-    m_LastClickedID: 25214
-    m_ExpandedIDs: 000000002e620000406200007e620000ffffff7f
+    scrollPos: {x: 0, y: 31}
+    m_SelectedIDs: 46620000
+    m_LastClickedID: 25158
+    m_ExpandedIDs: 000000002c6200002e6200003062000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1302,7 +1303,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002e620000
+    m_ExpandedIDs: 000000002c6200002e62000030620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1451,10 +1452,10 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 31}
-    m_SelectedIDs: 7c620000
-    m_LastClickedID: 25212
-    m_ExpandedIDs: 000000002e62000040620000866200008c6200008e620000ffffff7f
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 2c620000
+    m_LastClickedID: 25132
+    m_ExpandedIDs: 000000002c6200002e6200003062000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1482,7 +1483,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002e620000
+    m_ExpandedIDs: 000000002c6200002e62000030620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1583,7 +1584,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/_Home_/Scripts
+    - Assets/_Home_/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1591,16 +1592,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/_Home_/Scripts
+  - Assets/_Home_/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Projects\GGJ2024
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 31}
-    m_SelectedIDs: 7c620000
-    m_LastClickedID: 25212
-    m_ExpandedIDs: 000000002e620000406200007e620000866200008a6200008c6200008e620000ffffff7f
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 46620000
+    m_LastClickedID: 25158
+    m_ExpandedIDs: 000000002c6200002e6200003062000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1628,7 +1629,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002e620000
+    m_ExpandedIDs: 000000002c6200002e62000030620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
