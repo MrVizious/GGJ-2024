@@ -459,7 +459,6 @@ GameObject:
   m_Component:
   - component: {fileID: 316565926}
   - component: {fileID: 316565928}
-  - component: {fileID: 316565927}
   m_Layer: 0
   m_Name: Cam4
   m_TagString: Untagged
@@ -482,14 +481,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 246089462}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &316565927
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 316565925}
-  m_Enabled: 1
 --- !u!20 &316565928
 Camera:
   m_ObjectHideFlags: 0
@@ -796,7 +787,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1033175324}
   - component: {fileID: 1033175326}
-  - component: {fileID: 1033175325}
   m_Layer: 0
   m_Name: Cam1
   m_TagString: Untagged
@@ -819,14 +809,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 246089462}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &1033175325
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1033175323}
-  m_Enabled: 1
 --- !u!20 &1033175326
 Camera:
   m_ObjectHideFlags: 0
@@ -1151,6 +1133,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 25.678, y: 7.616, z: -1.089}
+--- !u!1 &1235226031
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1235226033}
+  - component: {fileID: 1235226032}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1235226032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235226031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5f096325fcbd2243b2025262de8175c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onSoundPlay:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1235226033
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235226031}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1239295420
 GameObject:
   m_ObjectHideFlags: 0
@@ -1161,7 +1190,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1239295421}
   - component: {fileID: 1239295423}
-  - component: {fileID: 1239295422}
   m_Layer: 0
   m_Name: Cam3
   m_TagString: Untagged
@@ -1184,14 +1212,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 246089462}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &1239295422
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1239295420}
-  m_Enabled: 1
 --- !u!20 &1239295423
 Camera:
   m_ObjectHideFlags: 0
@@ -2012,7 +2032,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1801399852}
   - component: {fileID: 1801399854}
-  - component: {fileID: 1801399853}
   m_Layer: 0
   m_Name: Cam2
   m_TagString: Untagged
@@ -2035,14 +2054,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 246089462}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &1801399853
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801399851}
-  m_Enabled: 1
 --- !u!20 &1801399854
 Camera:
   m_ObjectHideFlags: 0
@@ -2455,3 +2466,4 @@ SceneRoots:
   - {fileID: 1731502793}
   - {fileID: 1116001283}
   - {fileID: 1792014882}
+  - {fileID: 1235226033}
