@@ -9,7 +9,7 @@ using Sirenix.OdinInspector;
 [RequireComponent(typeof(ShowManager))]
 public class SoundManager : MonoBehaviour
 {
-    private HashSet<AudioClip> playingSounds = new HashSet<AudioClip>();
+    public HashSet<AudioClip> playingSounds = new HashSet<AudioClip>();
 
     private ShowManager _showManager;
     private ShowManager showManager
