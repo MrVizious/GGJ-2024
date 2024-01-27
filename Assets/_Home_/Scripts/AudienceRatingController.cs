@@ -1,18 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class audienceRatingController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    public ShowManager showManager;
+    public Image audienceMeter;
     // Update is called once per frame
     void Update()
     {
-        
+        audienceMeter.fillAmount = showManager.rating / 100;
     }
 }
