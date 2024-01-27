@@ -30,4 +30,8 @@ public class SceneButtonController : MonoBehaviour
         desactivatedButton = newButton;
         camButtonsList.Remove(desactivatedButton);
     }
+
+    public void deactivateSoundButton(GameObject soundButton){
+        soundButton.GetComponent<ExtendedButton>().enabled = false;
+    }
 }
