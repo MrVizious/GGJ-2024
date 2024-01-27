@@ -14,7 +14,7 @@ public class TimePanelController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       timeText = GetComponent<TMP_Text>(); 
+        timeText = GetComponent<TMP_Text>();
     }
 
     // Update is called once per frame
@@ -23,7 +23,8 @@ public class TimePanelController : MonoBehaviour
         timeUpdate();
     }
 
-    void timeUpdate(){
+    void timeUpdate()
+    {
         timer += Time.deltaTime;
         seconds = Mathf.FloorToInt(timer%60);
         minutes = Mathf.FloorToInt(timer/60);
