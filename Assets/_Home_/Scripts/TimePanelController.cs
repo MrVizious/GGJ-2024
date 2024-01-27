@@ -8,7 +8,7 @@ public class TimePanelController : MonoBehaviour
 {
     int seconds;
     int minutes;
-    float timer;
+    [SerializeField] float timer;
     TMP_Text timeText;
 
     // Start is called before the first frame update
@@ -26,8 +26,8 @@ public class TimePanelController : MonoBehaviour
     void timeUpdate()
     {
         timer += Time.deltaTime;
-        seconds = Mathf.FloorToInt(timer);
-        minutes = Mathf.FloorToInt(timer / 60);
-        timeText.SetText(string.Format("{0:00}:{1:00}", minutes, seconds));
+        seconds = Mathf.FloorToInt(timer%60);
+        minutes = Mathf.FloorToInt(timer/60);
+        timeText.SetText(string.Format("{0:00}:{1:00}",minutes, seconds));
     }
 }
