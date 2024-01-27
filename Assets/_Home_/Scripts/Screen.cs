@@ -15,7 +15,7 @@ public class Screen : MonoBehaviour
             if (_currentRenderTexture == null) _currentRenderTexture = (RenderTexture)image.texture;
             return _currentRenderTexture;
         }
-        private set
+        set
         {
             _currentRenderTexture = value;
             UpdateCameraRenderTexture();
