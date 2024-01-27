@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f07c57f64be214b4bbbc8c8657abe6a2
+guid: db91163322ce93f4fa81c4b811dfe42a
 AudioImporter:
   externalObjects: {}
   serializedVersion: 7
@@ -18,6 +18,6 @@ AudioImporter:
   loadInBackground: 0
   ambisonic: 0
   3D: 1
-  userData:
-  assetBundleName:
-  assetBundleVariant:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
