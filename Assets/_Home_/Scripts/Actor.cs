@@ -28,7 +28,7 @@ public class Actor : ShowAgent
 
     private void StopSpeakingAnimation()
     {
-        voiceSource.onEndedPlaying -= () => StopSpeakingAnimation();
+        //voiceSource.onEndedPlaying -= () => StopSpeakingAnimation();
         animator.SetBool("Talking", false);
     }
 

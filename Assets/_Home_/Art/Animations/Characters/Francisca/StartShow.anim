@@ -83,7 +83,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 29.016666
+    m_StopTime: 93.01667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -261,10 +261,45 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 29.016666
+  - time: 23
     functionName: Play
     data: 
     objectReferenceParameter: {fileID: 8300000, guid: 39b89c0297e796f499098c4d4db2c625, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 29.033333
+    functionName: Play
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 27c790fad31c0744e837571768c629e6, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 39
+    functionName: Play
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 9ac3557bb33612f468795e3ccf8135cd, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 50.183334
+    functionName: Play
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: d62ecd14246941b4fa35c48c0807b456, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 65.11667
+    functionName: Play
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 0360b4d7ff3c2704f9c21620bb0b3828, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 93.01667
+    functionName: Play
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 1053b1750a489504d84affd00d394a0a, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
