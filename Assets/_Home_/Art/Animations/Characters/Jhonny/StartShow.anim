@@ -20,7 +20,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: 0.9384155, y: 0, z: 3.7086425}
+        value: {x: 5.31, y: 0, z: 2.08}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -28,8 +28,8 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 57
-        value: {x: 0.9384155, y: 0, z: 3.7086425}
+        time: 152
+        value: {x: 5.31, y: 0, z: 2.08}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -37,8 +37,8 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 60.033333
-        value: {x: 6.25, y: 0, z: 1.54}
+        time: 152.95
+        value: {x: 3.78, y: 0, z: 2.71}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -74,7 +74,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 60.033333
+    m_StopTime: 189.51666
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -96,7 +96,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.9384155
+        value: 5.31
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -104,8 +104,8 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 57
-        value: 0.9384155
+        time: 152
+        value: 5.31
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -113,8 +113,8 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 60.033333
-        value: 6.25
+        time: 152.95
+        value: 3.78
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -143,7 +143,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 57
+        time: 152
         value: 0
         inSlope: 0
         outSlope: 0
@@ -152,7 +152,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 60.033333
+        time: 152.95
         value: 0
         inSlope: 0
         outSlope: 0
@@ -174,7 +174,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 3.7086425
+        value: 2.08
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -182,8 +182,8 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 57
-        value: 3.7086425
+        time: 152
+        value: 2.08
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -191,8 +191,8 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 60.033333
-        value: 1.54
+        time: 152.95
+        value: 2.71
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -211,45 +211,31 @@ AnimationClip:
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 7
+  - time: 153
     functionName: Play
     data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 01059c9c85e48ac4c949665b9be22ec8, type: 3}
+    objectReferenceParameter: {fileID: 8300000, guid: 9858925690b98b04aa97ac4c078937f4, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 24.966667
+  - time: 160
     functionName: Play
     data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 86ca49f8e07b56f4aaea9f437db8e15b, type: 3}
+    objectReferenceParameter: {fileID: 8300000, guid: 857b84e52f960c244827d63f16021bb4, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 36.016666
+  - time: 169.51666
     functionName: Play
     data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 9c91de727380a0a4eb41842ab32fd054, type: 3}
+    objectReferenceParameter: {fileID: 8300000, guid: f2aca4b27303d284ab3c3c488d8a5a9b, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 45.033333
+  - time: 189.51666
     functionName: Play
     data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 37fea41443cac5c45a3c28e6ec75fc2e, type: 3}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 54
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 3f1c4a7ef2c5c0c44b3598b9db98a790, type: 3}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 57
-    functionName: SetAnimationBoolFalse
-    data: Sitting
-    objectReferenceParameter: {fileID: 0}
+    objectReferenceParameter: {fileID: 8300000, guid: db91163322ce93f4fa81c4b811dfe42a, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

@@ -37,16 +37,25 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 81.96667
-        value: {x: 5.37, y: 0, z: 2.06}
-        inSlope: {x: -0.021884665, y: 0, z: 0}
-        outSlope: {x: -0.021884665, y: 0, z: 0}
+        time: 80.48333
+        value: {x: 4.03, y: 0, z: 2.69}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 83.88333
+        time: 85.61667
+        value: {x: 4.03, y: 0, z: 2.69}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 88.21667
         value: {x: -2.35, y: 0, z: 3.44}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -83,7 +92,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 100.01667
+    m_StopTime: 167.01666
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -122,16 +131,25 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 81.96667
-        value: 5.37
-        inSlope: -0.021884665
-        outSlope: -0.021884665
+        time: 80.48333
+        value: 4.03
+        inSlope: 0
+        outSlope: 0
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 83.88333
+        time: 85.61667
+        value: 4.03
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 88.21667
         value: -2.35
         inSlope: 0
         outSlope: 0
@@ -170,7 +188,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 81.96667
+        time: 80.48333
         value: 0
         inSlope: 0
         outSlope: 0
@@ -179,7 +197,16 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 83.88333
+        time: 85.61667
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 88.21667
         value: 0
         inSlope: 0
         outSlope: 0
@@ -218,8 +245,8 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 81.96667
-        value: 2.06
+        time: 80.48333
+        value: 2.69
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -227,7 +254,16 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 83.88333
+        time: 85.61667
+        value: 2.69
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 88.21667
         value: 3.44
         inSlope: 0
         outSlope: 0
@@ -261,10 +297,31 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 100.01667
+  - time: 98.98333
     functionName: Play
     data: 
     objectReferenceParameter: {fileID: 8300000, guid: 78460e9892347eb4ea77a1c212bc6db5, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 125.1
+    functionName: Play
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 9ee6c20c414d6e646b6e90ebf19ee95b, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 149.5
+    functionName: Play
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 40f5ad9dc39d89546bd748ef479ac9ea, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 167.01666
+    functionName: Play
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 133b9044a1799514a9358905226d1db7, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

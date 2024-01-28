@@ -31,7 +31,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 28.033333
+    m_StopTime: 190.05
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -52,58 +52,121 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 9.983334
-    functionName: AddAcceptedSound
+    functionName: AddSound
     data: 
     objectReferenceParameter: {fileID: 8300000, guid: 4085ae5bcbc328c4e84b012c903a6c57, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 12
-    functionName: AddRequiredSound
+  - time: 30.016666
+    functionName: AddSound
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 996ceb15d8dff3a44b217407a0ee2362, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 46
+    functionName: AddSound
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 996ceb15d8dff3a44b217407a0ee2362, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 54.083332
+    functionName: AddSound
     data: 
     objectReferenceParameter: {fileID: 8300000, guid: 4085ae5bcbc328c4e84b012c903a6c57, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 14.5
-    functionName: RemoveRequiredSound
+  - time: 72.26667
+    functionName: AddSound
     data: 
     objectReferenceParameter: {fileID: 8300000, guid: 4085ae5bcbc328c4e84b012c903a6c57, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 16.5
-    functionName: RemoveAcceptedSound
+  - time: 78.51667
+    functionName: AddSound
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 53a30d99dfbe2bf46aec3f9ecfbd06d9, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 94.01667
+    functionName: AddSound
     data: 
     objectReferenceParameter: {fileID: 8300000, guid: 4085ae5bcbc328c4e84b012c903a6c57, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 21.083334
-    functionName: AddAcceptedSound
+  - time: 106.01667
+    functionName: AddSound
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 4085ae5bcbc328c4e84b012c903a6c57, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 113.5
+    functionName: AddSound
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 959597e1b7825bf46847fbf090315f07, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 117.01667
+    functionName: AddSound
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 996ceb15d8dff3a44b217407a0ee2362, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 127.01667
+    functionName: AddSound
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 996ceb15d8dff3a44b217407a0ee2362, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 136.51666
+    functionName: AddSound
     data: 
     objectReferenceParameter: {fileID: 8300000, guid: 53a30d99dfbe2bf46aec3f9ecfbd06d9, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 23.016666
-    functionName: AddRequiredSound
+  - time: 145.5
+    functionName: AddSound
     data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 53a30d99dfbe2bf46aec3f9ecfbd06d9, type: 3}
+    objectReferenceParameter: {fileID: 8300000, guid: 996ceb15d8dff3a44b217407a0ee2362, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 26.033333
-    functionName: RemoveRequiredSound
+  - time: 151.01666
+    functionName: AddSound
     data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 53a30d99dfbe2bf46aec3f9ecfbd06d9, type: 3}
+    objectReferenceParameter: {fileID: 8300000, guid: 4085ae5bcbc328c4e84b012c903a6c57, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 28.033333
-    functionName: RemoveAcceptedSound
+  - time: 161.01666
+    functionName: AddSound
     data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 53a30d99dfbe2bf46aec3f9ecfbd06d9, type: 3}
+    objectReferenceParameter: {fileID: 8300000, guid: 4085ae5bcbc328c4e84b012c903a6c57, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 176.01666
+    functionName: AddSound
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 4085ae5bcbc328c4e84b012c903a6c57, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 190.05
+    functionName: AddSound
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 4085ae5bcbc328c4e84b012c903a6c57, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

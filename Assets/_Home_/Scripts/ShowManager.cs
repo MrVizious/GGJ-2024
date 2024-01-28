@@ -78,7 +78,7 @@ public class ShowManager : MonoBehaviour
 
         CalculateSoundsScore();
 
-        CalculateCameraScore();
+        //CalculateCameraScore();
 
     }
 

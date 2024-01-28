@@ -83,7 +83,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 93.01667
+    m_StopTime: 182
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -296,10 +296,59 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 86.03333
+    functionName: Play
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 18350bcdd8b0a224e89933851b35c461, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 93.01667
     functionName: Play
     data: 
     objectReferenceParameter: {fileID: 8300000, guid: 1053b1750a489504d84affd00d394a0a, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 112
+    functionName: Play
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 570e4a96629937d419b253887d9e0873, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 121
+    functionName: Play
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 1845a0095e88b984298ac5667146a662, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 142.51666
+    functionName: Play
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 83f3cbf1acbeee344a8cf01bc627a77b, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 151
+    functionName: Play
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 75e91ca5fc5b9f44db0102be17564d6f, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 157.01666
+    functionName: Play
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: f19ea0fe5b3025144ad4766d31f0a928, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 182
+    functionName: Play
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 33a90a49358d421419cde9d2993ff781, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
