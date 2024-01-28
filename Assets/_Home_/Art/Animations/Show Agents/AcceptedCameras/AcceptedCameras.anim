@@ -31,7 +31,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 26
+    m_StopTime: 39.966667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -52,44 +52,65 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0
-    functionName: AddAcceptedRenderTexture
+    functionName: AddRenderTexture
     data: 
     objectReferenceParameter: {fileID: 8400000, guid: a5eecac13c75c8a4bb601de702f62c0d, type: 2}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 6
-    functionName: AddAcceptedRenderTexture
+    functionName: AddRenderTexture
     data: 
     objectReferenceParameter: {fileID: 8400000, guid: 9b47bfae6d39d1340ae3be832acabe28, type: 2}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 8
-    functionName: RemoveAcceptedRenderTexture
+  - time: 15.016666
+    functionName: AddRenderTexture
     data: 
     objectReferenceParameter: {fileID: 8400000, guid: a5eecac13c75c8a4bb601de702f62c0d, type: 2}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 17.016666
-    functionName: AddAcceptedRenderTexture
-    data: 
-    objectReferenceParameter: {fileID: 8400000, guid: a5eecac13c75c8a4bb601de702f62c0d, type: 2}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 19.016666
-    functionName: RemoveAcceptedRenderTexture
-    data: 
-    objectReferenceParameter: {fileID: 8400000, guid: 9b47bfae6d39d1340ae3be832acabe28, type: 2}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 26
-    functionName: AddAcceptedRenderTexture
+  - time: 22.016666
+    functionName: AddRenderTexture
     data: 
     objectReferenceParameter: {fileID: 8400000, guid: 5ae649741161ff94cb93624e0a06d0eb, type: 2}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 25.016666
+    functionName: AddRenderTexture
+    data: 
+    objectReferenceParameter: {fileID: 8400000, guid: 9b47bfae6d39d1340ae3be832acabe28, type: 2}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 28
+    functionName: AddRenderTexture
+    data: 
+    objectReferenceParameter: {fileID: 8400000, guid: 5ae649741161ff94cb93624e0a06d0eb, type: 2}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 35.016666
+    functionName: AddRenderTexture
+    data: 
+    objectReferenceParameter: {fileID: 8400000, guid: 9b47bfae6d39d1340ae3be832acabe28, type: 2}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 38.016666
+    functionName: AddRenderTexture
+    data: 
+    objectReferenceParameter: {fileID: 8400000, guid: 5ae649741161ff94cb93624e0a06d0eb, type: 2}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 39.966667
+    functionName: AddRenderTexture
+    data: 
+    objectReferenceParameter: {fileID: 8400000, guid: a5eecac13c75c8a4bb601de702f62c0d, type: 2}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

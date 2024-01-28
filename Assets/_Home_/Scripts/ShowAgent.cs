@@ -35,17 +35,24 @@ public class ShowAgent : MonoBehaviour
 
     public async void AddSound(AudioClip newAudioClip)
     {
-        Debug.Log("Adding " + newAudioClip + " to accepted sounds");
         showManager.AddAcceptedSound(newAudioClip);
         await UniTask.WaitForSeconds(2f);
-        Debug.Log("Adding " + newAudioClip + " to required sounds");
         showManager.AddRequiredSound(newAudioClip);
         await UniTask.WaitForSeconds(newAudioClip.length / 2f);
-        Debug.Log("Removing " + newAudioClip + " from required sounds");
         showManager.RemoveRequiredSound(newAudioClip);
         await UniTask.WaitForSeconds(2f);
-        Debug.Log("Removing " + newAudioClip + " from accepted sounds");
         showManager.RemoveAcceptedSound(newAudioClip);
+    }
+
+    public async void AddRenderTexture(RenderTexture newRenderTexture)
+    {
+        showManager.acceptedRenderTextures.Add(newRenderTexture);
+
+        await UniTask.WaitForSeconds(2f);
+
+        showManager.acceptedRenderTextures = new HashSet<RenderTexture>();
+        showManager.acceptedRenderTextures.Add(newRenderTexture);
+
     }
 
     public void AddRequiredSound(AudioClip newAudioClip)
