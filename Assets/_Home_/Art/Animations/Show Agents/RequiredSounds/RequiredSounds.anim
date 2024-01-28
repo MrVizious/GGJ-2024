@@ -31,7 +31,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 17.016666
+    m_StopTime: 28.033333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -51,7 +51,7 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 11.533334
+  - time: 9.983334
     functionName: AddAcceptedSound
     data: 
     objectReferenceParameter: {fileID: 8300000, guid: 4085ae5bcbc328c4e84b012c903a6c57, type: 3}
@@ -65,17 +65,45 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 16.5
+  - time: 14.5
     functionName: RemoveRequiredSound
     data: 
     objectReferenceParameter: {fileID: 8300000, guid: 4085ae5bcbc328c4e84b012c903a6c57, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 17.016666
+  - time: 16.5
     functionName: RemoveAcceptedSound
     data: 
     objectReferenceParameter: {fileID: 8300000, guid: 4085ae5bcbc328c4e84b012c903a6c57, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 21.083334
+    functionName: AddAcceptedSound
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 53a30d99dfbe2bf46aec3f9ecfbd06d9, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 23.016666
+    functionName: AddRequiredSound
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 53a30d99dfbe2bf46aec3f9ecfbd06d9, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 26.033333
+    functionName: RemoveRequiredSound
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 53a30d99dfbe2bf46aec3f9ecfbd06d9, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 28.033333
+    functionName: RemoveAcceptedSound
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 53a30d99dfbe2bf46aec3f9ecfbd06d9, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

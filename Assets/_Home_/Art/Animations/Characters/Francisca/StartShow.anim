@@ -83,7 +83,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 4.05
+    m_StopTime: 29.016666
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -258,6 +258,13 @@ AnimationClip:
     functionName: SetAnimationBoolTrue
     data: Knitting
     objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 29.016666
+    functionName: Play
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 39b89c0297e796f499098c4d4db2c625, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
