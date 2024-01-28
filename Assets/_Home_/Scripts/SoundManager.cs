@@ -24,16 +24,17 @@ public class SoundManager : MonoBehaviour
     }
 
     [Button]
-    public void PlaySound(AudioClip audioClip)
+    public AudioSourceExtended PlaySound(AudioClip audioClip)
     {
         if (playingSounds.Contains(audioClip))
         {
             Debug.Log("Audio is already playing");
-            return;
+            return null;
         }
         playingSounds.Add(audioClip);
         AudioSourceExtended source = AudioManager.Instance.PlaySound(audioClip);
         source.onRelease += () => OnSoundStop(audioClip);
+        return source;
     }
 
     public void BeginBeep()
@@ -45,7 +46,7 @@ public class SoundManager : MonoBehaviour
 
     public void StopBeep()
     {
-        beepSource.Stop();
+        beepSource?.Stop();
         playingSounds.Remove(beepClip);
     }
 

@@ -29,10 +29,16 @@ public class ShowManager : MonoBehaviour
 
     [Header("References")]
     public Screen mainScreen;
+    public AudioClip bazingaSound;
 
     public HashSet<AudioClip> acceptedSounds = new HashSet<AudioClip>();
     public HashSet<AudioClip> requiredSounds = new HashSet<AudioClip>();
     public HashSet<RenderTexture> acceptedRenderTextures = new HashSet<RenderTexture>();
+
+
+    [SerializeField]
+    private List<ShowAgent> showAgents = new List<ShowAgent>();
+
     [SerializeField]
     [OnValueChanged("UpdateCurrentRenderTexture")]
     private RenderTexture _currentRenderTexture;
@@ -61,10 +67,10 @@ public class ShowManager : MonoBehaviour
     }
 
 
-    // TODO: Activate SHOWPLAYING with a button or something
     private void Start()
     {
-        SHOWPLAYING = true;
+        showAgents = new List<ShowAgent>(FindObjectsOfType<ShowAgent>());
+        StartShow();
     }
     private void Update()
     {
@@ -76,11 +82,22 @@ public class ShowManager : MonoBehaviour
 
     }
 
+    [Button]
+    public void StartShow()
+    {
+        for (int i = 0; i < showAgents.Count; i++)
+        {
+            showAgents[i].StartShow();
+        }
+        SHOWPLAYING = true;
+    }
+
     private void CalculateSoundsScore()
     {
         foreach (AudioClip audioClip in soundManager.playingSounds)
         {
-            if (requiredSounds.Contains(audioClip)) rating += rewardPerSecondSound * Time.deltaTime;
+            if (audioClip == bazingaSound) rating += rewardPerSecondSound * 2 * Time.deltaTime;
+            else if (requiredSounds.Contains(audioClip)) rating += rewardPerSecondSound * Time.deltaTime;
             else if (!acceptedSounds.Contains(audioClip)) rating -= penaltyPerSecondSound * Time.deltaTime;
         }
 
@@ -92,6 +109,7 @@ public class ShowManager : MonoBehaviour
 
     private void CalculateCameraScore()
     {
+        if (acceptedRenderTextures == null || acceptedRenderTextures.Count <= 0) return;
         if (acceptedRenderTextures.Contains(mainScreen.currentRenderTexture))
         {
             rating += rewardPerSecondCamera * Time.deltaTime;
@@ -148,5 +166,14 @@ public class ShowManager : MonoBehaviour
         {
             Debug.LogError("The sound wasn't in accepted sounds before being deleted. Please, check this", this);
         }
+    }
+
+    public void AddAcceptedRenderTexture(RenderTexture renderTexture)
+    {
+        acceptedRenderTextures.Add(renderTexture);
+    }
+    public void RemoveAcceptedRenderTexture(RenderTexture renderTexture)
+    {
+        acceptedRenderTextures.Remove(renderTexture);
     }
 }
