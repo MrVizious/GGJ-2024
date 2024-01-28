@@ -346,6 +346,17 @@ MonoBehaviour:
         _Z: 0
         _W: 0
         _Object: {fileID: 0}
+    - _Target: {fileID: 11400000, guid: cb7fdcbb0490f0c4d9adadb63e75bbe4, type: 2}
+      _MethodName: set_MusicVolume
+      _PersistentArguments:
+      - _Type: 5
+        _Int: 0
+        _String: 
+        _X: 0.01
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
   _EnableEvent:
     _PersistentCalls: []
   _DisableEvent:
@@ -368,7 +379,7 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: da3d631fc572bcc4fbbbabfe5d02370c, type: 2}
+    - {fileID: 11400000, guid: cb7fdcbb0490f0c4d9adadb63e75bbe4, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
