@@ -81,7 +81,6 @@ public abstract class StateButton : MonoBehaviour
 
     protected virtual void OnPointerEnter()
     {
-        Debug.Log("On Pointer Enter");
         if (currentState == ButtonState.off) currentState = ButtonState.hover;
         onPointerEnter.Invoke();
     }

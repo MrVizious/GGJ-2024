@@ -16,7 +16,6 @@ public class CamButtonsController : MonoBehaviour
 
         for (int i = 0; i < camButtons.Count; i++)
         {
-            Debug.Log("Adding listener");
             CamButton currentButton = camButtons[i];
             currentButton.onClick.AddListener(() => DeselectAllButtonsExceptFor(currentButton));
         }
@@ -24,7 +23,6 @@ public class CamButtonsController : MonoBehaviour
 
     private void DeselectAllButtonsExceptFor(CamButton camButton)
     {
-        Debug.Log("Setting off except for " + camButton.name);
         camButton.onClick.RemoveListener(() => DeselectAllButtonsExceptFor(camButton));
         for (int i = 0; i < camButtons.Count; i++)
         {
