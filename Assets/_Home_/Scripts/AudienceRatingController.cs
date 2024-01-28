@@ -10,6 +10,6 @@ public class audienceRatingController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        audienceMeter.fillAmount = showManager.rating / 100;
+        audienceMeter.fillAmount = showManager.rating / 100f;
     }
 }

@@ -29,6 +29,7 @@ public class ShowManager : MonoBehaviour
 
     [Header("References")]
     public Screen mainScreen;
+    public AudioClip bazingaSound;
 
     public HashSet<AudioClip> acceptedSounds = new HashSet<AudioClip>();
     public HashSet<AudioClip> requiredSounds = new HashSet<AudioClip>();
@@ -80,7 +81,8 @@ public class ShowManager : MonoBehaviour
     {
         foreach (AudioClip audioClip in soundManager.playingSounds)
         {
-            if (requiredSounds.Contains(audioClip)) rating += rewardPerSecondSound * Time.deltaTime;
+            if (audioClip == bazingaSound) rating += rewardPerSecondSound * 2 * Time.deltaTime;
+            else if (requiredSounds.Contains(audioClip)) rating += rewardPerSecondSound * Time.deltaTime;
             else if (!acceptedSounds.Contains(audioClip)) rating -= penaltyPerSecondSound * Time.deltaTime;
         }
 
