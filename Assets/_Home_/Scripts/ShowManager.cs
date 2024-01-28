@@ -36,6 +36,7 @@ public class ShowManager : MonoBehaviour
     public HashSet<RenderTexture> acceptedRenderTextures = new HashSet<RenderTexture>();
 
 
+    [SerializeField]
     private List<ShowAgent> showAgents = new List<ShowAgent>();
 
     [SerializeField]
