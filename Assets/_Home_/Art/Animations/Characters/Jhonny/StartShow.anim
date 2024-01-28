@@ -74,7 +74,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 189.51666
+    m_StopTime: 195.05
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -236,6 +236,13 @@ AnimationClip:
     functionName: Play
     data: 
     objectReferenceParameter: {fileID: 8300000, guid: db91163322ce93f4fa81c4b811dfe42a, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 195.05
+    functionName: WinGame
+    data: 
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

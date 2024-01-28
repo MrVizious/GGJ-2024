@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
 using Cysharp.Threading.Tasks;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Animator))]
 public class ShowAgent : MonoBehaviour
@@ -53,6 +54,15 @@ public class ShowAgent : MonoBehaviour
         showManager.acceptedRenderTextures = new HashSet<RenderTexture>();
         showManager.acceptedRenderTextures.Add(newRenderTexture);
 
+    }
+
+    public void WinGame()
+    {
+        SceneController.Instance.GoToWinScene();
+    }
+    public void LoseGame()
+    {
+        SceneController.Instance.GoToLoseScene();
     }
 
     public void AddRequiredSound(AudioClip newAudioClip)
