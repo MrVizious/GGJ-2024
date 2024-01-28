@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
 using System.Linq;
+using Cysharp.Threading.Tasks;
 
 [RequireComponent(typeof(SoundManager))]
 public class ShowManager : MonoBehaviour
@@ -19,6 +20,7 @@ public class ShowManager : MonoBehaviour
         {
             value = Mathf.Clamp(value, 0f, 100f);
             _rating = value;
+            if (_rating <= 0f) SceneController.Instance.GoToLoseScene();
         }
     }
     [Header("Penalties and rewards")]
@@ -67,9 +69,10 @@ public class ShowManager : MonoBehaviour
     }
 
 
-    private void Start()
+    private async void Start()
     {
         showAgents = new List<ShowAgent>(FindObjectsOfType<ShowAgent>());
+        await UniTask.WaitForSeconds(30f);
         StartShow();
     }
     private void Update()
