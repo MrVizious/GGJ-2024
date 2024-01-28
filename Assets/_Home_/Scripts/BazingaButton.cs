@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Audio;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class BazingaButton : StateButton
 {
     public Sprite openSprite;
+    public AudioClip bazingaSound;
+    [HideInInspector]
     public int keysTurned = 0;
     private bool open = false;
     private Sprite closeSprite;
@@ -17,6 +20,7 @@ public class BazingaButton : StateButton
     }
     protected override void OnClick()
     {
+        if (currentState == ButtonState.on) return;
         if (open == false)
         {
             open = true;
@@ -28,6 +32,8 @@ public class BazingaButton : StateButton
         else if (keysTurned == 2)
         {
             currentState = ButtonState.on;
+            FindObjectOfType<ShowManager>().rating += 20f;
+            AudioManager.Instance.PlaySound(bazingaSound);
             return;
         }
         else

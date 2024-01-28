@@ -3984,6 +3984,7 @@ MonoBehaviour:
       m_Calls: []
   _currentState: 0
   openSprite: {fileID: 21300000, guid: 44fe3ca6e82220747b7208ef99ae4996, type: 3}
+  bazingaSound: {fileID: 8300000, guid: c650529be6c5a434e96c2834a7ea73e2, type: 3}
   keysTurned: 0
 --- !u!1 &1090417135
 GameObject:
