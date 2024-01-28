@@ -42,4 +42,8 @@ public class SceneController : Singleton<SceneController>
     {
         ChangeGameScene("WinScene");
     }
+    public void GoToCredits()
+    {
+        ChangeGameScene("CreditScene");
+    }
 }

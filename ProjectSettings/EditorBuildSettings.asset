@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Home_/Scenes/ShowScene.unity
     guid: 256da7a1ecfc7b74fb3c025a5c0541d9
+  - enabled: 1
+    path: Assets/_Home_/Scenes/CreditScene.unity
+    guid: b98d694385a8de54aa0d4b393796608e
+  - enabled: 1
+    path: Assets/_Home_/Scenes/WinScene.unity
+    guid: 909f65db9e60ce14d959b5653cb6fd8d
+  - enabled: 1
+    path: Assets/_Home_/Scenes/LoseScene.unity
+    guid: 8d7691f09efc205459e8cafe1e203154
   m_configObjects: {}
