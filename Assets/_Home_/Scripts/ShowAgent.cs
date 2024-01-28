@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Sirenix.OdinInspector;
 
 [RequireComponent(typeof(Animator))]
-public abstract class ShowAgent : MonoBehaviour
+public class ShowAgent : MonoBehaviour
 {
     private Animator _animator;
     protected Animator animator
@@ -25,6 +26,7 @@ public abstract class ShowAgent : MonoBehaviour
         }
     }
 
+    [Button]
     public void StartShow()
     {
         animator.Play("StartShow");
@@ -47,6 +49,15 @@ public abstract class ShowAgent : MonoBehaviour
     public void RemoveAcceptedSound(AudioClip oldAudioClip)
     {
         showManager.RemoveAcceptedSound(oldAudioClip);
+    }
+
+    public void AddAcceptedRenderTexture(RenderTexture renderTexture)
+    {
+        showManager.AddAcceptedRenderTexture(renderTexture);
+    }
+    public void RemoveAcceptedRenderTexture(RenderTexture renderTexture)
+    {
+        showManager.RemoveAcceptedRenderTexture(renderTexture);
     }
 
 }
